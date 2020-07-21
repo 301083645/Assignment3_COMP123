@@ -8,10 +8,17 @@ namespace Assignment3_COMP123
     {
         private string _type;
 
-        public GiantPlanet(string type)
-            : base("ho",7,7)
+        public GiantPlanet(string name, double diameter, double mass, string type)
+            :base(name, diameter, mass)
         {
-            this._type = type;
+            if (type == "Gas" || type == "Ice")
+            {
+                this._type = type;
+            }
+            else
+            {
+                Console.WriteLine("type should be either Gas or Ice");
+            }
 
         }
 

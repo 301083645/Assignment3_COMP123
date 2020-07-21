@@ -19,9 +19,15 @@ namespace Assignment3_COMP123
         {
             Console.ReadKey();
         }
+
+   
+
         static void Main(string[] args)
         {
-            
+            GiantPlanet giantPlanet = new GiantPlanet("Mars",8000,9000,"gas");
+            Console.WriteLine(giantPlanet.ToString());
+
+            //TerrestrialPlanet terrestrialPlanet = new TerrestrialPlanet();
         }
     }
 }

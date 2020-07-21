@@ -8,8 +8,8 @@ namespace Assignment3_COMP123
     {
         private bool _oxygen;
 
-        public TerrestrialPlanet(bool oxygen)
-            : base("ho", 7, 7)
+        public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen)
+            : base(name, diameter, mass)
         {
             this._oxygen = oxygen;
 
