@@ -24,10 +24,14 @@ namespace Assignment3_COMP123
 
         static void Main(string[] args)
         {
-            GiantPlanet giantPlanet = new GiantPlanet("Mars",8000,9000,"gas");
+            GiantPlanet giantPlanet = new GiantPlanet("Mars",8000,9000,"G" +
+                "as");
             Console.WriteLine(giantPlanet.ToString());
 
-            //TerrestrialPlanet terrestrialPlanet = new TerrestrialPlanet();
+            Console.WriteLine("================================================");
+
+            TerrestrialPlanet terrestrialPlanet = new TerrestrialPlanet("TP",3000,9000,true);
+            Console.WriteLine(terrestrialPlanet.ToString());
         }
     }
 }
